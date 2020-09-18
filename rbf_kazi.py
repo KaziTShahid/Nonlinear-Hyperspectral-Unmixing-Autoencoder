@@ -1,8 +1,16 @@
-# -*- coding: utf-8 -*-
 """
 Created on Fri Jul  3 21:40:35 2020
 
-@author: Shounak
+@author: Kazi T Shahid and Ioannis D Schizas
+
+This code is used for the script "autoencoder_main.py"
+
+This is the RBF Layer, where the input is hyperspectral pixel vectors. The centers are estimated endmembers, and the output will be
+estimated abundances for that mixed pixel input.
+
+
+If you wish to use this code, please cite the URL given above for the dataset, and also the URL where this code was downloaded from:
+https://github.com/KaziTShahid/Nonlinear-Hyperspectral-Unmixing-Autoencoder
 """
 
 import tensorflow as tf
