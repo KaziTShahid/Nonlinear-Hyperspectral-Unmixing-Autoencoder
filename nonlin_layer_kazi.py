@@ -10,14 +10,14 @@ This is the Final Layer, where the input is the vector containing abundances, an
 
 Inputs:
 TAKE_REPEATING_PRODUCTS = 0 or 1, 0 when considering Fan model, 1 when considering Bilinear Model
-upto_how_many_degrees = upto how many degree cross-products would be used in the nonlinear mixing model. For example, "upto_how_many_degrees = 3" means that upto 3rd degree 
+upto_how_many_degrees = Upto how many degree cross-products would be used in the nonlinear mixing model. For example, "upto_how_many_degrees = 3" means that upto 3rd degree 
 cross-products will be considered in the nonlinear mixing model.
-initial_endmembers = weights that are initialized with the endmember matrices. These weights will determine the final estimated values of the endmembers.
+initial_endmembers = Weights that are initialized with the endmember matrices. These weights will determine the final estimated values of the endmembers.
 
 Weights:
-linear_endmembers = named so, because they make up the endmembers in the linear component of the mixture, and their cross-products are later used to 
+linear_endmembers = Named so, because they make up the endmembers in the linear component of the mixture, and their cross-products are later used to 
 estimate the nonlinear components of the mixture model.
-scaling_values = what value is used to control the contribution of the nonlinear components of the mixture model, w.r.t. to the entire mixture. This determines how
+scaling_values = What value is used to control the contribution of the nonlinear components of the mixture model, w.r.t. to the entire mixture. This determines how
 strong the nonlinear component is, compared to the linear component.
 
 If you wish to use this code, please cite the URL given above for the dataset, and also the URL where this code was downloaded from:
