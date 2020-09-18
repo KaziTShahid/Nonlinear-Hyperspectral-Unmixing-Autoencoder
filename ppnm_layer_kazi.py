@@ -9,12 +9,12 @@ This code is used for the script "autoencoder_main.py"
 This is the Final Layer, where the input is the vector containing abundances, and their cross products.
 
 Input:
-initial_endmembers = weights that are initialized with the endmember matrices. These weights will determine the final estimated values of the endmembers.
+initial_endmembers = Weights that are initialized with the endmember matrices. These weights will determine the final estimated values of the endmembers.
 
 Weights:
-linear_endmembers = named so, because they make up the endmembers in the linear component of the mixture, and their cross-products are later used to 
+linear_endmembers = Named so, because they make up the endmembers in the linear component of the mixture, and their cross-products are later used to 
 estimate the nonlinear components of the mixture model.
-b_s = what value is used to control the contribution of the nonlinear components of the mixture model, w.r.t. to the entire mixture. This determines how
+b_s = What value is used to control the contribution of the nonlinear components of the mixture model, w.r.t. to the entire mixture. This determines how
 strong the nonlinear component is, compared to the linear component.
 
 If you wish to use this code, please cite the URL given above for the dataset, and also the URL where this code was downloaded from:
