@@ -2,7 +2,25 @@
 """
 Created on Mon Jul 20 17:33:48 2020
 
-@author: Shounak
+@author: Kazi T Shahid and Ioannis D Schizas
+
+This code is used for the script "autoencoder_main.py"
+
+This is the Final Layer, where the input is the vector containing abundances, and their cross products.
+
+Inputs:
+TAKE_REPEATING_PRODUCTS = 0 or 1, 0 when considering Fan model, 1 when considering Bilinear Model
+upto_how_many_degrees = upto how many degree cross-products would be used in the nonlinear mixing model. For example, "upto_how_many_degrees = 3" means that upto 3rd degree 
+cross-products will be considered in the nonlinear mixing model.
+initial_endmembers = weights that are initialized with the endmember matrices. These weights will determine the final estimated values of the endmembers.
+
+Weights:
+linear_endmembers = named so, because their cross-products are later used to estimate the nonlinear components of the mixture model.
+scaling_values = what value is used to control the contribution of the nonlinear components of the mixture model, w.r.t. to the entire mixture. This determines how
+strong the nonlinear component is, compared to the linear component.
+
+If you wish to use this code, please cite the URL given above for the dataset, and also the URL where this code was downloaded from:
+https://github.com/KaziTShahid/Nonlinear-Hyperspectral-Unmixing-Autoencoder
 """
 
 
@@ -17,8 +35,8 @@ class NONLIN_Layer(Layer):
         
         self.initial_endmembers_init = initial_endmembers
         self.initial_endmembers_shape = initial_endmembers.shape
-        self.TAKE_REPEATING_PRODUCTS = TAKE_REPEATING_PRODUCTS
-        self.upto_how_many_degrees = upto_how_many_degrees
+        self.TAKE_REPEATING_PRODUCTS = TAKE_REPEATING_PRODUCTS 
+        self.upto_how_many_degrees = upto_how_many_degrees 
         
         super(NONLIN_Layer, self).__init__()
         
