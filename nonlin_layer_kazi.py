@@ -15,7 +15,8 @@ cross-products will be considered in the nonlinear mixing model.
 initial_endmembers = weights that are initialized with the endmember matrices. These weights will determine the final estimated values of the endmembers.
 
 Weights:
-linear_endmembers = named so, because their cross-products are later used to estimate the nonlinear components of the mixture model.
+linear_endmembers = named so, because they make up the endmembers in the linear component of the mixture, and their cross-products are later used to 
+estimate the nonlinear components of the mixture model.
 scaling_values = what value is used to control the contribution of the nonlinear components of the mixture model, w.r.t. to the entire mixture. This determines how
 strong the nonlinear component is, compared to the linear component.
 
