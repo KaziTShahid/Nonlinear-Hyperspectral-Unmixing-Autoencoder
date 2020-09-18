@@ -5,9 +5,19 @@ Created on Fri Jul  3 21:40:35 2020
 
 This code is used for the script "autoencoder_main.py"
 
-This is the RBF Layer, where the input is hyperspectral pixel vectors. The centers are estimated endmembers, and the output will be
-estimated abundances for that mixed pixel input.
+This is the RBF Layer, where the input is a hyperspectral mixed pixel vector, and the output is the abundance vector for that mixed pixel.
+The formula used here is,
 
+a(i) = exp(-1 * beta * ||input-center(i)||^2) , i = 1,...,num_classes
+
+Inputs:
+num_classes = Number of classes being considered
+betas = Initial value of betas
+centers = Initial value of RBF centers, usually Kmeans centers of input pixels
+
+Weights:
+centers = Estimated endmember values, initialized by a constant, given as input
+betas = Parameter controlling the area covered by the RBF bell curve, initialized by a constant, given as input
 
 If you wish to use this code, please cite the URL given above for the dataset, and also the URL where this code was downloaded from:
 https://github.com/KaziTShahid/Nonlinear-Hyperspectral-Unmixing-Autoencoder
