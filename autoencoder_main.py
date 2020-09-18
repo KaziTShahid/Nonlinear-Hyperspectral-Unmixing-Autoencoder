@@ -2,7 +2,7 @@
 """
 Created on Mon Jul 27 14:58:51 2020
 
-@author: Kazi T Shahid
+@author: Kazi T Shahid and Ioannis D. Schizas
 
 This code is used for the paper ""
 
