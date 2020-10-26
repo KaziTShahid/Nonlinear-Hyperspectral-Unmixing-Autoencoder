@@ -455,7 +455,7 @@ for mix_model_index in range(len(mixing_models)):
                 rearranged_estimated_endmembers_rec = np.zeros(estimated_endmembers_rec.shape)
                 rearranged_estimated_endmembers_centers = np.zeros(estimated_endmembers_centers.shape)
                 
-                if len( {0,1,2,3} - set(maxes_loc) ) == 0:
+                if len( set(list(range(num_classes))) - set(maxes_loc) ) == 0:
                 
                     for i in range(num_classes):
                         
@@ -467,7 +467,7 @@ for mix_model_index in range(len(mixing_models)):
                 else: 
                     
                     
-                    unused_indices_unarranged = {0,1,2,3} - set(maxes_loc)
+                    unused_indices_unarranged = set(list(range(num_classes))) - set(maxes_loc)
                  
                     aa = np.asarray(list(Counter(list(maxes_loc)).items()))
                     sorting = np.argsort(aa[:,1]) #1st entry is column index, 2nd entry is # of instances
@@ -491,7 +491,7 @@ for mix_model_index in range(len(mixing_models)):
                             rearranged_estimated_endmembers_centers[assign_loc,:] = estimated_endmembers_centers[pair[0],:]
                             used_indices_arranged.add(assign_loc)
                             
-                    unused_indices_arranged = {0,1,2,3} - used_indices_arranged
+                    unused_indices_arranged = set(list(range(num_classes))) - used_indices_arranged
                     unused_indices_arranged = list(unused_indices_arranged)
                     unused_indices_unarranged = list(unused_indices_unarranged)
                     
