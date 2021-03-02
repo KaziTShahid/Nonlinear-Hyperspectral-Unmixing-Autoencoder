@@ -36,7 +36,7 @@ class PPNM_Layer(Layer):
         
     def build(self, input_shape):
         
-        self.linear_endmembers = self.add_weight("linear_endmembers", shape = self.initial_endmembers_shape,initializer=tf.constant_initializer(self.initial_endmembers_init))        
+        self.linear_endmembers = self.add_weight("linear_endmembers", shape = self.initial_endmembers_shape,initializer=tf.constant_initializer(self.initial_endmembers_init),constraint = tf.keras.constraints.NonNeg()))        
         
         self.b_s = self.add_weight("b_s", shape = (input_shape[0],), initializer=tf.keras.initializers.Zeros())
         
