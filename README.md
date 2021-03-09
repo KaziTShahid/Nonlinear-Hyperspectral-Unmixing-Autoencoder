@@ -3,6 +3,8 @@ This is the code for an autoencoder that performs nonlinear pixel unmixing on hy
 
 The three mixing models used here are the Fan, Bilinear and PPNM models.
 
+This code can also estimate the number of endmembers.
+
 Also, you can have higher order nonlinear terms, like 3rd or 4th degree cross-products instead of only upto the 2nd degree cross products. For this, change the "upto_how_many_degrees" parameter.
 
 # Main Files
