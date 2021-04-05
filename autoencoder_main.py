@@ -263,16 +263,7 @@ for mix_model_index in range(len(mixing_models)):
                 k = 1 / (10** (noise_dB/10) )
                 all_pixels = all_pixels + np.random.normal(scale=k*np.max(all_pixels), size=[total_pixels,ref_pixels[0].shape[0]]) # adding noise
                 
-                
-                #%% svd on data for denoising
-                
-                temp = np.transpose(all_pixels)
-                
-                U, s, Vh = linalg.svd(temp)
-                U, s, Vh = svds(temp,k=6)
-                Lowmixed = np.matmul(np.transpose(U),temp)
-                temp = np.matmul(U,Lowmixed)                         
-                all_pixels = np.transpose(temp)
+               
                 
                 #%% kmeans
                 
