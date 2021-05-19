@@ -4,7 +4,9 @@ Created on Mon Jul 27 14:58:51 2020
 
 @author: Kazi T Shahid and Ioannis D. Schizas
 
-This code is used for the paper ""
+This code is used for the paper "Unsupervised Hyperspectral Unmixing via Nonlinear Autoencoders",
+the paper's link is given below:
+https://ieeexplore.ieee.org/document/9432042
 
 This will generate an autoencoder for unsupervised nonlinear hyperspectral unmixing
 
