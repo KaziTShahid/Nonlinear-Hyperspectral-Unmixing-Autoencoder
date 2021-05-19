@@ -29,4 +29,6 @@ Also, cite the link where this code was from
 
 https://github.com/KaziTShahid/Nonlinear-Hyperspectral-Unmixing-Autoencoder
 
-The paper published which uses this code will be added later on.
+The paper published can be found in this link
+
+https://ieeexplore.ieee.org/document/9432042
