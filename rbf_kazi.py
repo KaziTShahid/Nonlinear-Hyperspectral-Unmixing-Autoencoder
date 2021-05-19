@@ -21,6 +21,11 @@ betas = Parameter controlling the area covered by the RBF bell curve, initialize
 
 If you wish to use this code, please cite the URL given above for the dataset, and also the URL where this code was downloaded from:
 https://github.com/KaziTShahid/Nonlinear-Hyperspectral-Unmixing-Autoencoder
+
+Also, please cite the paper published, which can be found in this link
+https://ieeexplore.ieee.org/document/9432042
+
+
 """
 
 import tensorflow as tf
